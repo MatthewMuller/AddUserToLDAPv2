@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5f70b6cb-e070-48f1-98d2-c6af0ba78137" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LDIFFiles/addToLDAP.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/LDIFFiles/addToLDAP.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LDIFFiles/addUser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/testldapfilemaker.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/testldapfilemaker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/add_user_to_ldap.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/add_user_to_ldap.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ldapFileMaker.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ldapFileMaker.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1SOuWs7CBsmQkcjLN4xaQ4AssX2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/LDIFFiles/Test" />
+      <recent name="$PROJECT_DIR$/Documentation" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.addUser">
+    <configuration name="BadParams" type="PythonConfigurationType" factoryName="Python">
+      <module name="AddUserToLDAP" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python3.6" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ldapFileMaker" />
+      <option name="PARAMETERS" value="cannedinput1 cannedinput2 cannedinput3" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="addUser" type="PythonConfigurationType" factoryName="Python">
+      <module name="AddUserToLDAP" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python3.6" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/LDIFFiles" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/LDIFFiles/addUser.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pythongui" type="PythonConfigurationType" factoryName="Python">
+      <module name="AddUserToLDAP" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/userinputgui.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="testldapfilemaker" type="PythonConfigurationType" factoryName="Python">
+      <module name="AddUserToLDAP" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/testldapfilemaker.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="userFileMaker" type="PythonConfigurationType" factoryName="Python">
+      <module name="AddUserToLDAP" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python3.6" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ldapFileMaker" />
+      <option name="PARAMETERS" value="John Doe doej 1004 1004" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.BadParams" />
+      <item itemvalue="Python.userFileMaker" />
+      <item itemvalue="Python.pythongui" />
+      <item itemvalue="Python.testldapfilemaker" />
+      <item itemvalue="Python.addUser" />
+    </list>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5f70b6cb-e070-48f1-98d2-c6af0ba78137" name="Default Changelist" comment="" />
+      <created>1544231236130</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1544231236130</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Moved a document into the documentation folder. Also added a README (needs much work).">
+      <created>1544232197761</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1544232197761</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added a helpful links text file.&#10;&#10;As for ldapFileMaker, I added a function to create the file the LDAP needs when adding a user and wrote a test to print it out. Will now work on the file needed when making a group in the LDAP.">
+      <created>1544242479158</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1544242479158</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Updated ldapFileMaker to make the group file for the ldif. Also I have started expanding the README so the development of this tool is more straight forward and not scattered. Once the README is completed (updated), the road map of what to do will be more clear.">
+      <created>1545442772064</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1545442772065</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Adding more to readme. Adding table of contents and background information about adding a user to the LDAP.">
+      <created>1545447837307</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1545447837307</updated>
+    </task>
+    <task id="LOCAL-00005" summary="STILL Adding more to readme. Adding table of contents and background information about adding a user to the LDAP.">
+      <created>1545450068756</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1545450068756</updated>
+    </task>
+    <task id="LOCAL-00006" summary="README has been updated to the point where the explanation of how to add users and groups is completed. README still needs to speak about the program. Now we are ready to continue writing the python / bash program to automate the process talked about in the README background section.">
+      <created>1545451189496</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1545451189496</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Updated ldapFileMaker to accept only one set of parameters (5). Also wrote a new function to make the third LDAP file we need for adding a user to the LDAP. Also wrote a test for this new function. Lastly, refactored code to be formatted in proper python fashion.">
+      <created>1546744627677</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1546744627677</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Removed the ldap files being created by script. This data should not be saved because it could pose a security risk. Also moved test to own file and formatted test to output specifics about each test performed.">
+      <created>1554774215465</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1554774215466</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Moved a document into the documentation folder. Also added a README (needs much work)." />
+    <MESSAGE value="Added a helpful links text file.&#10;&#10;As for ldapFileMaker, I added a function to create the file the LDAP needs when adding a user and wrote a test to print it out. Will now work on the file needed when making a group in the LDAP." />
+    <MESSAGE value="Updated ldapFileMaker to make the group file for the ldif. Also I have started expanding the README so the development of this tool is more straight forward and not scattered. Once the README is completed (updated), the road map of what to do will be more clear." />
+    <MESSAGE value="Adding more to readme. Adding table of contents and background information about adding a user to the LDAP." />
+    <MESSAGE value="STILL Adding more to readme. Adding table of contents and background information about adding a user to the LDAP." />
+    <MESSAGE value="README has been updated to the point where the explanation of how to add users and groups is completed. README still needs to speak about the program. Now we are ready to continue writing the python / bash program to automate the process talked about in the README background section." />
+    <MESSAGE value="Updated ldapFileMaker to accept only one set of parameters (5). Also wrote a new function to make the third LDAP file we need for adding a user to the LDAP. Also wrote a test for this new function. Lastly, refactored code to be formatted in proper python fashion." />
+    <MESSAGE value="Added file for GUI and got the import information fixed. Ready to build GUI for script." />
+    <MESSAGE value="Removed the ldap files being created by script. This data should not be saved because it could pose a security risk. Also moved test to own file and formatted test to output specifics about each test performed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed the ldap files being created by script. This data should not be saved because it could pose a security risk. Also moved test to own file and formatted test to output specifics about each test performed." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="458" y="0" width="1440" height="1038" maximized="true" key="dock-window-1" timestamp="1579920277071">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="2039" y="27" width="1440" height="1038" maximized="true" key="dock-window-1/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1579919309402" />
+    <state x="458" y="0" width="1440" height="1038" maximized="true" key="dock-window-1/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1579920277071" />
+    <state x="1070" y="208" width="707" height="804" key="find.popup" timestamp="1579919621128">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="1070" y="208" width="707" height="804" key="find.popup/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1579919621128" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

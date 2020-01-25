@@ -1,0 +1,34 @@
+############################################################
+#This is used to look up the schema for a user in the ldap
+############################################################
+
+mullermm@lamport:~/Desktop/AddLDAPUser$ ldapsearch -H ldap://141.224.38.247 -x -s base -b "cn=subschema" 
+
+############################################################
+#THis is what is printed by the command
+############################################################
+
+# extended LDIF
+#
+# LDAPv3
+# base <cn=subschema> with scope baseObject
+# filter: (objectclass=*)
+# requesting: ALL
+#
+
+# Subschema
+dn: cn=Subschema
+objectClass: top
+objectClass: subentry
+objectClass: subschema
+objectClass: extensibleObject
+cn: Subschema
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 2
+# numEntries: 1
+
+

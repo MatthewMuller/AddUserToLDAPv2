@@ -1,0 +1,12 @@
+
+# Add a LDAP User
+ldapadd -x -W -D "cn=administrator,dc=babbage,dc=augsburg,dc=edu" -f ldapUserToAdd.ldif;
+
+# Assign Password to LDAP User
+##  ldappasswd -s welcome123 -W -D "cn=administrator,dc=babbage,dc=augsburg,dc=edu" -x "uid=dummyt,ou=users,dc=tgs,dc=com";
+
+# Add a LDAP Group using ldapadd
+ldapadd -x -W -D "cn=administrator,dc=babbage,dc=augsburg,dc=edu" -f ldapGroupToadd.ldif
+
+# Add an User to an existing Group using ldapmodify
+ldapmodify -x -W -D "cn=dummyt,dc=babbage,dc=augsburg,dc=edu" -f addUserToGroup.ldif;

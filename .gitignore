@@ -1,0 +1,6 @@
+#Blocks any os files from mac file systems
+DS_Store
+
+#Ignore the files in /LDIFFiles
+src/LDIFFiles/*
+
