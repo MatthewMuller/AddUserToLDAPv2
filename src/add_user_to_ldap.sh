@@ -45,3 +45,10 @@ sshpass -p ${arr[4]} scp -r $PWD/LDIFFiles administrator@141.224.38.247:/home/ad
 
 # run the addToLDAP.sh script on babbage that was transfered in the LDIF folder
 sshpass -p ${arr[4]} ssh -t -o LogLevel=QUIET administrator@141.224.38.247 "echo ${arr[4]} | sudo -S sh /home/administrator/LDIFFiles/addToLDAP.sh"
+
+# Clean up
+rm LDIFFiles/addToLDAP.sh
+rm LDIFFiles/ldapAddToGroup.ldif
+rm LDIFFiles/ldapGroupEntry.ldif
+rm LDIFFiles/ldapUserEntry.ldif
+rmdir LDIFFiles/

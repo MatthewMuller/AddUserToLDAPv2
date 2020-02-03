@@ -9,9 +9,9 @@ import os
 def ldap_user_file_maker(first_name, last_name, username, uid, gid):
 
     try:
-        f = open("ldapUserEntry.ldif", "x")      # creates the file if needed
+        f = open("LDIFFiles/ldapUserEntry.ldif", "x") # creates the file if needed
     except IOError:
-        f = open("ldapUserEntry.ldif", "w")      # opens the file if it exist
+        f = open("LDIFFiles/ldapUserEntry.ldif", "w") # opens the file if it exist
 
     f.write("dn: uid=" + username + ",ou=users,dc=babbage,dc=augsburg,dc=edu" + "\n")
     f.write("objectClass: posixAccount" + "\n")
@@ -36,9 +36,9 @@ def ldap_user_file_maker(first_name, last_name, username, uid, gid):
 def ldap_group_file_maker(username, gid):
 
     try:
-        f = open("ldapGroupEntry.ldif", "x")     # creates the file if needed
+        f = open("LDIFFiles/ldapGroupEntry.ldif", "x") # creates the file if needed
     except IOError:
-        f = open("ldapGroupEntry.ldif", "w")     # opens the file if it exist
+        f = open("LDIFFiles/ldapGroupEntry.ldif", "w") # opens the file if it exist
 
     f.write("dn: cn=" + username + ",ou=groups,dc=babbage,dc=augsburg,dc=edu\n")
     f.write("objectClass: top\n")
@@ -53,9 +53,9 @@ def ldap_group_file_maker(username, gid):
 def add_user_to_group(username):
 
     try:
-        f = open("ldapAddToGroup.ldif", "x")     # creates the file if needed
+        f = open("LDIFFiles/ldapAddToGroup.ldif", "x")     # creates the file if needed
     except IOError:
-        f = open("ldapAddToGroup.ldif", "w")     # opens the file if it exist
+        f = open("LDIFFiles/ldapAddToGroup.ldif", "w")     # opens the file if it exist
 
     f.write("dn: cn=" + username + ",ou=groups,dc=babbage,dc=augsburg,dc=edu\n")
     f.write("changetype: modify\n")
@@ -68,9 +68,9 @@ def add_user_to_group(username):
 def ldap_script_for_babbage(username, pw, apw):
 
     try:
-        f = open("addToLDAP.sh", "x")      # creates the file if needed
+        f = open("LDIFFiles/addToLDAP.sh", "x") # creates the file if needed
     except IOError:
-        f = open("addToLDAP.sh", "w")      # opens the file if it exist
+        f = open("LDIFFiles/addToLDAP.sh", "w") # opens the file if it exist
 
     f.write("\necho \"\n\n-Add User-\"\n")
     f.write("ldapadd -x -w " + apw + " -D \"cn=admin,dc=babbage,dc=augsburg,dc=edu\" -f /home/administrator/LDIFFiles/ldapUserEntry.ldif;" + "\n")
@@ -109,6 +109,19 @@ def bad_parameters():
     print("Arguments - " + args)
     print("Require 7 arguments to make files for adding user/group to LDAP")
 
+##############################################################################
+# Create a directory if it doesn't exist
+#
+# Returns True on success, False on failure
+##############################################################################
+def mkdir_if_not_exist(path):
+    if not os.path.isdir(path):
+        try:
+            os.mkdir(path)
+        except OSError:
+            print ("Creation of the directory %s failed!" % path)
+            return False
+    return True
 
 ##############################################################################
 #
@@ -126,35 +139,36 @@ def main():
     # test_ldap_group_file_maker()    # Test the group file maker to see output
     # test_add_user_to_group()        # Test the add user to group file maker
 
-    # if the number of params are correct, make the ldif files
-    if len(sys.argv) == 7:
-
-        ############################
-        # System args - what it is #
-        # sys.argv[1] - first name #
-        # sys.argv[2] - last name  #
-        # sys.argv[3] - userName   #
-        # sys.argv[4] - uid/gid    #
-        # sys.argv[5] - user pw    #
-        # sys.argv[6] - admin pw   #
-        ############################
-
-        # For debug only. Will show admin and user pw in console
-        # print("args : " + str(sys.argv))
-
-        ldap_user_file_maker(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[4])
-        ldap_group_file_maker(sys.argv[3], sys.argv[4])
-        add_user_to_group(sys.argv[3])
-        ldap_script_for_babbage(sys.argv[3], sys.argv[5], sys.argv[6])
-
-        os.rename("ldapAddToGroup.ldif", "LDIFFiles/ldapAddToGroup.ldif")
-        os.rename("ldapGroupEntry.ldif", "LDIFFiles/ldapGroupEntry.ldif")
-        os.rename("ldapUserEntry.ldif", "LDIFFiles/ldapUserEntry.ldif")
-        os.rename("addToLDAP.sh", "LDIFFiles/addToLDAP.sh")
-        print("-ldif files have been created-")
-    else:
+    # only continue if number of parameters is correct
+    if len(sys.argv) != 7:
         bad_parameters()
+        return
 
+    # make the ldif files
+
+    ############################
+    # System args - what it is #
+    # sys.argv[1] - first name #
+    # sys.argv[2] - last name  #
+    # sys.argv[3] - userName   #
+    # sys.argv[4] - uid/gid    #
+    # sys.argv[5] - user pw    #
+    # sys.argv[6] - admin pw   #
+    ############################
+
+    # For debug only. Will show admin and user pw in console
+    # print("args : " + str(sys.argv))
+
+    # Create LDIFFiles folder if it doesn't exist.
+    if not mkdir_if_not_exist("LDIFFiles/"):
+        return
+
+    ldap_user_file_maker(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[4])
+    ldap_group_file_maker(sys.argv[3], sys.argv[4])
+    add_user_to_group(sys.argv[3])
+    ldap_script_for_babbage(sys.argv[3], sys.argv[5], sys.argv[6])
+
+    print("-ldif files have been created-")
 
 if __name__ == '__main__':
     main()
